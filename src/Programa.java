@@ -1,25 +1,25 @@
-public class Programa { // criacao da classe Programa
-    public static void main(String[] args){ // criacao do método main (principal) do programa
+public class Programa { // criacao da classe publica Programa, abrindo com a chave
+    public static void main(String[] args){ // criacao do método publico, estático e vazio main (principal), com o Tipo String e com o vetor args, abrindo com a chave
         Filme f = new Filme(); // importando a classe Filme para dentro do metodo main, criando um objeto com o nome de "f" e construindo com o tipo Filme com o comando new
 
-        f.setCodigo(987); // trocando o codigo do filme
+        f.setCodigo(987); // objeto f acessando o método setCodigo da sua classe, atribuindo um valor
 
-        f.setNome("O rei leao"); // trocando o nome do filme
+        f.setNome("O rei leao");// objeto f acessando o método setNome da sua classe, atribuindo um valor
 
-        f.setValor(5.00); // trocando o valor do filme
+        f.setValor(5.00); // objeto f acessando o método setValor da sua classe, atribuindo um valor
 
-        f.devolver(); // devolvendo o filme
+        f.devolver(); // objeto f acessando o método devolver
 
-        f.mostra(); // mostrando tudo sobre o filme do objeto "f" (no caso esta disponivel pois foi devolvido, com um valor e um nome que foi estabelecido)
+        f.mostra();// objeto f acessando o método mostrar
 
-        f.retirar(); // retirando o filme da locadora
+        f.retirar();// objeto f acessando o método retirar da sua classe
 
-        f.mostra(); // mostrando tudo sobre o filme do objeto "f" (no caso esta indisponivel, pois foi returado)
+        f.mostra();// objeto f acessando o método mostrar
 
-        try { // tentar
+        try { // tentar, estrutura de erro, abrindo com a chave
             f.retirar(); // condicao (retirar o filme)
-        }catch (RuntimeException e) { // pegar 
+        }catch (RuntimeException e) { // Fecnado do pegar com a chave, pegar, abrindo com a chave
             System.out.println(e.getMessage()); // condicao (mostra uma mensagem na tela)
-        }
-    }
-}
+        }// fechando a estrutura de erro com a chave
+    }//fechando o metodo main com a chave
+}// fechando a classe com a chave
