@@ -50,11 +50,11 @@ public class Filme {// criação da classe publica Fime, abrindo com a chave
         disponivel = true; // condicao
     }// fechando método com a chave
 
-    public void mostra(){
+    public void mostra(){// criando o metodo publico mostrar, abrindo com a chave
         System.out.println("Codigo do fime: " + this.codigo); // mostra o codigo do filme na tela
         System.out.println("Nome do filme: " + this.nome); // mostra o nome do filme na tela
         System.out.println("Valor: R$ " + this.valor); // mostra o valor do filme na tela
         System.out.println("Disponivel: " + this.disponivel); // mostra se esta disponivel ou nao o fime na tela
-    }
+    }//fechando o método com a chave
 
-}
+}// fechando a classe com a chave
